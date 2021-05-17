@@ -20,26 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63c842af-4221-4a32-bb3f-e3b7b79e3778" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/firebase.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/firebase.services.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/actions/ageGroup.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducers/ageGroup.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Chart/Components/AgeGroupChart/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Chart/Components/DailyVisitorChart/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Chart/Components/SatisfactionChart/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Chart/Components/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/Chart/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/actions/satisfaction.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/satisfaction.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Routes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hoc/Layout/Main/components/NavBar/SideBar/SideBarComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hoc/Layout/Main/components/NavBar/SideBar/SideBarComponent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/actions/actionTypes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/actionTypes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/ageGroup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/ageGroup.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/actions/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/reducers/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Chart/Components/SatisfactionChart/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Chart/Components/SatisfactionChart/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +62,7 @@
       <workItem from="1620838169615" duration="2114000" />
       <workItem from="1621015882700" duration="735000" />
       <workItem from="1621065621032" duration="5217000" />
-      <workItem from="1621232927814" duration="4352000" />
+      <workItem from="1621232927814" duration="6475000" />
     </task>
     <servers />
   </component>

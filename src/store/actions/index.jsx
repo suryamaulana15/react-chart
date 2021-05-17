@@ -20,3 +20,7 @@ export  {
 export {
   fetchAgeGroup
 } from './ageGroup';
+
+export {
+  fetchSatisfaction
+} from './satisfaction';

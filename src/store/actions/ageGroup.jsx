@@ -9,11 +9,11 @@ export const fetchAgeGroupStart = () => {
   };
 };
 
-export const fetchAgeGroupSuccess = (elderly, adult, teenager) => {
+export const fetchAgeGroupSuccess = (elder, adult, teenager) => {
   return {
     type: actionTypes.FETCH_AGE_GROUPS_CHART_SUCCESS,
     ageGroup: [
-      elderly,
+      elder,
       adult,
       teenager
     ]
@@ -32,12 +32,12 @@ export const fetchAgeGroup = () => {
     dispatch(fetchAgeGroupStart());
     db.orderBy("timestamps", "asc")
       .onSnapshot((snapShot) => {
-        const fetchedEldery = ['elderly'];
+        const fetchedElder = ['elder'];
         const fetchedAdult = ['adult'];
         const fetchedTeenager = ['teenager'];
         snapShot.forEach((doc) => {
-          fetchedEldery.push(
-            doc.data().elderly
+          fetchedElder.push(
+            doc.data().elder
           );
           fetchedAdult.push(
             doc.data().adult
@@ -46,7 +46,7 @@ export const fetchAgeGroup = () => {
             doc.data().teenager
           );
         });
-        dispatch(fetchAgeGroupSuccess(fetchedEldery, fetchedAdult, fetchedTeenager));
+        dispatch(fetchAgeGroupSuccess(fetchedElder, fetchedAdult, fetchedTeenager));
       },(error) => {
         dispatch(fetchAgeGroupFail(error));
       })
