@@ -24,3 +24,7 @@ export {
 export {
   fetchSatisfaction
 } from './satisfaction';
+
+export {
+  fetchDailyVisitors
+} from './dailyVisitor';
