@@ -6,13 +6,40 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="572d651a-f853-4524-8e4a-b5454cf8110b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="63c842af-4221-4a32-bb3f-e3b7b79e3778" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/firebase.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/firebase.services.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/actions/ageGroup.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/ageGroup.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Chart/Components/AgeGroupChart/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Chart/Components/DailyVisitorChart/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Chart/Components/SatisfactionChart/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Chart/Components/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/Chart/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Routes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hoc/Layout/Main/components/NavBar/SideBar/SideBarComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hoc/Layout/Main/components/NavBar/SideBar/SideBarComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/actionTypes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/actionTypes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +49,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1oKNJ9ZV9dBwYVBPZt44f7P1mal" />
+  <component name="ProjectId" id="1sQGMGDMzxwVIgN35VLh3SVwSWw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -33,32 +60,21 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/views/Produk/components" />
-      <recent name="$PROJECT_DIR$/src/assets" />
-      <recent name="$PROJECT_DIR$/src/views" />
-    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="572d651a-f853-4524-8e4a-b5454cf8110b" name="Default Changelist" comment="" />
-      <created>1613031248007</created>
+      <changelist id="63c842af-4221-4a32-bb3f-e3b7b79e3778" name="Default Changelist" comment="" />
+      <created>1620797350021</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1613031248007</updated>
-      <workItem from="1613031249090" duration="7766000" />
-      <workItem from="1613092047041" duration="3618000" />
-      <workItem from="1613110696267" duration="453000" />
-      <workItem from="1613124342130" duration="2674000" />
-      <workItem from="1613267612926" duration="14283000" />
-      <workItem from="1613350004673" duration="34717000" />
-      <workItem from="1613444217267" duration="9000" />
-      <workItem from="1613447189282" duration="888000" />
+      <updated>1620797350021</updated>
+      <workItem from="1620797351152" duration="2435000" />
+      <workItem from="1620838169615" duration="2114000" />
+      <workItem from="1621015882700" duration="735000" />
+      <workItem from="1621065621032" duration="5217000" />
+      <workItem from="1621232927814" duration="4352000" />
     </task>
     <servers />
   </component>
@@ -78,9 +94,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="458" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1613410881706">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1621067475154">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="458" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1613410881706" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1621067475154" />
   </component>
 </project>

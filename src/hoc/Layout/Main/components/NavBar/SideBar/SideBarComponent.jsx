@@ -179,19 +179,19 @@ const SideBarComponent = props => {
         <List
           className={classes.menus}
         >
-           <NavLink to="/produk">
+           <NavLink to="/chart">
           <Button
             activeclassname={classes.active}
             className={classes.button}
             component={CustomRouterLink}
-            to='/produk'
+            to='/chart'
             onClick={props.closed}
           >
             <ListItem button key='product'>
               <ListItemIcon>
                 <DashboardIcon style={{ color: textMenuWhite }} />
               </ListItemIcon>
-              <ListItemText secondary={<Typography type="subtitle1" className={classes.textMenu}>Produk</Typography>} />
+              <ListItemText secondary={<Typography type="subtitle1" className={classes.textMenu}>Chart</Typography>} />
             </ListItem>
           </Button>
 

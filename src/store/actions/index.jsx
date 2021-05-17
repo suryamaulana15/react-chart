@@ -15,4 +15,8 @@ export  {
   storeVariant,
   updateVariant,
   updateProduct
-} from  './product'
+} from  './product';
+
+export {
+  fetchAgeGroup
+} from './ageGroup';

@@ -9,6 +9,7 @@ import { Alert  } from './components/UI';
 import { ThemeProvider } from '@material-ui/styles';
 import theme from './theme';
 import store from './store';
+import 'c3/c3.min.css';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 ReactDOM.render(
