@@ -3,6 +3,7 @@ import { updateObject } from '../../shared/utility';
 
 const initialState = {
   dailyVisitor: [],
+  axisX: [],
   error: {},
   loading: false,
 }
@@ -16,6 +17,7 @@ const fetchDailyVisitorsStart = (state, action) => {
 const fetchDailyVisitorsSuccess = (state, action) => {
   return updateObject(state, {
     dailyVisitor: action.dailyVisitor,
+    axisX: action.axisX,
     loading: false
   });
 };

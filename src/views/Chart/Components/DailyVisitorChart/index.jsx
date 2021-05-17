@@ -3,9 +3,11 @@ import C3Chart from 'react-c3js';
 import * as actions from '../../../../store/actions';
 import {connect} from "react-redux";
 import {Loading} from '../../../../components/UI';
+import {isEmpty} from "../../../../shared/utility";
 
 const DailyVisitorChart = (props) => {
-  const {onFetchDailyVisitor, dailyVisitor, loading} = props;
+  const {onFetchDailyVisitor, dailyVisitor, loading,axisX} = props;
+  let x = [];
 
   useEffect(() => {
     onFetchDailyVisitor();
@@ -18,8 +20,14 @@ const DailyVisitorChart = (props) => {
     danger: '#fb434a',
   }
 
+  if (!isEmpty(dailyVisitor)){
+    x = axisX;
+    console.log(x)
+  }
+
   const spline = {
     data: {
+      x: 'x',
       columns: dailyVisitor,
       type: 'spline',
     },
@@ -28,9 +36,12 @@ const DailyVisitorChart = (props) => {
     },
     axis: {
       x: {
+        type: 'timeseries',
         tick: {
-          outer: !1,
-        },
+          values: x
+          // format: function (x) { return x.getDate(); }
+          //format: '%Y' // format string is also available for timeseries data
+        }
       },
       y: {
         max: 300,
@@ -62,7 +73,8 @@ const DailyVisitorChart = (props) => {
 const mapStateToProps = state => {
   return {
     dailyVisitor: state.dailyVisitor.dailyVisitor,
-    loading: state.dailyVisitor.loading
+    loading: state.dailyVisitor.loading,
+    axisX: state.dailyVisitor.axisX
   };
 };
 

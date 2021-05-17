@@ -3,6 +3,7 @@ import C3Chart from 'react-c3js';
 import * as actions from '../../../../store/actions';
 import {connect} from "react-redux";
 import {Loading} from '../../../../components/UI';
+import {isEmpty} from "../../../../shared/utility";
 
 const AgeGroupChart = props => {
 
@@ -15,6 +16,7 @@ const AgeGroupChart = props => {
     danger: '#fb434a',
   }
 
+  console.log(ageGroup)
   let bar = {
     data: {
       columns: ageGroup,
