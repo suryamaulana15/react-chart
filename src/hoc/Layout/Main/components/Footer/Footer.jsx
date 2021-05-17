@@ -23,8 +23,8 @@ const Footer = props => {
       <Typography variant="body1">
         &copy;{' '}
 
-          TOKO SURYA MAKMUR
-        . 2020
+          guesehat.com
+        . 2021
       </Typography>
     </div>
   )

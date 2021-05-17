@@ -6,14 +6,6 @@ import MainLayout from './hoc/Layout/Main/Main';
 
 
 import {
-  // Login as LoginView,
-  // Dashboard as DashboardView,
-  // Profile as ProfileView,
-  // User as UserView,
-  // Produk as ProdukView,
-  // CreateProduk as CreateProdukView,
-  // Detail as DetailView,
-  // Edit as EditView,
   Chart as ChartView
 } from './views';
 

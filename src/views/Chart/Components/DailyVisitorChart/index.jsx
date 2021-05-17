@@ -4,8 +4,20 @@ import * as actions from '../../../../store/actions';
 import {connect} from "react-redux";
 import {Loading} from '../../../../components/UI';
 import {isEmpty} from "../../../../shared/utility";
+import {Grid, Typography} from "@material-ui/core";
+import {makeStyles} from "@material-ui/core/styles";
+
+const useStyles = makeStyles(theme => ({
+  contentPaddingBottom: {
+    paddingBottom: theme.spacing(3)
+  },
+  nonTransform: {
+    textDecoration: 'none'
+  }
+}));
 
 const DailyVisitorChart = (props) => {
+  const classes = useStyles();
   const {onFetchDailyVisitor, dailyVisitor, loading,axisX} = props;
   let x = [];
 
@@ -65,6 +77,13 @@ const DailyVisitorChart = (props) => {
 
   return (loading? <Loading/> :
     <Fragment>
+      <Grid container justify="space-around" className={classes.contentPaddingBottom}>
+        <Grid item>
+          <Typography variant={"h4"}>
+            Daily Visitor Chart
+          </Typography>
+        </Grid>
+      </Grid>
       <C3Chart data={spline.data} color={spline.color} axis={spline.axis} grid={spline.grid} />
     </Fragment>
   );

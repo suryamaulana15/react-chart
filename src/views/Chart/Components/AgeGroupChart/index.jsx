@@ -3,10 +3,20 @@ import C3Chart from 'react-c3js';
 import * as actions from '../../../../store/actions';
 import {connect} from "react-redux";
 import {Loading} from '../../../../components/UI';
-import {isEmpty} from "../../../../shared/utility";
+import {Grid, Typography} from "@material-ui/core";
+import {makeStyles} from "@material-ui/core/styles";
+
+const useStyles = makeStyles(theme => ({
+  contentPaddingBottom: {
+    paddingBottom: theme.spacing(3)
+  },
+  nonTransform: {
+    textDecoration: 'none'
+  }
+}))
 
 const AgeGroupChart = props => {
-
+  const classes = useStyles();
   const {onFetchAgeGroup, ageGroup, loading} = props;
 
   const colors = {
@@ -46,6 +56,14 @@ const AgeGroupChart = props => {
 
   return (loading ? <Loading/> :
     <Fragment>
+      <Grid container justify="space-around" className={classes.contentPaddingBottom}>
+        <Grid item>
+          <Typography variant={"h4"}>
+            Age Group Chart
+          </Typography>
+        </Grid>
+      </Grid>
+
       <C3Chart data={bar.data} color={bar.color} grid={bar.grid} bar={bar.bar} />
     </Fragment>
   );

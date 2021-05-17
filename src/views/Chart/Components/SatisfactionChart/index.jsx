@@ -3,8 +3,20 @@ import C3Chart from 'react-c3js';
 import * as actions from '../../../../store/actions';
 import {connect} from "react-redux";
 import {Loading} from '../../../../components/UI';
+import {makeStyles} from "@material-ui/core/styles";
+import {Grid, Typography} from "@material-ui/core";
+
+const useStyles = makeStyles(theme => ({
+  contentPaddingBottom: {
+    paddingBottom: theme.spacing(3)
+  },
+  nonTransform: {
+    textDecoration: 'none'
+  }
+}))
 
 const SatificationChart = props => {
+  const classes = useStyles();
   const {loading, satisfaction, onFetchSatisfaction} = props;
 
   const colors = {
@@ -33,6 +45,14 @@ const SatificationChart = props => {
 
   return (loading? <Loading/> :
     <Fragment>
+      <Grid container justify="space-around" className={classes.contentPaddingBottom}>
+        <Grid item>
+          <Typography variant={"h4"}>
+            Satisfaction Chart
+          </Typography>
+        </Grid>
+      </Grid>
+
       <C3Chart data={donut.data} color={donut.color} donut={donut.donut} />
     </Fragment>
   );
